@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>Thoughts on task 2</title>
+    <!-- Semantic UI CSS -->
+    <!-- No Normalization CSS here since the semantic included it.-->
+    <link rel="stylesheet" href="../css/semantic.css">
+    <link rel="stylesheet" href="../css/normal-slide1.css">
+</head>
+<body class="screenmiddle">
+<div class="ui center aligned container ">
+    <div class="ui text container">
+        <h1 class="ui header">Task 2 Discussion:</h1>
+        <div class="ui section divider"></div>
+        <div class="ui left aligned fluid container">
+            <p>
+                The differences defined by theObjectInstance.amISafe() and cantModifyField.get(theObjectInstance).
+            </p>
+            <p>
+                After task g, the value of the the field doesn't change. The fact is simple, since the 2nd time create
+                new instance without setting the private field will give it a inital value by itself.
+            </p>
+            <p>
+                But I do find some strange behaviors after changing this final field. Use get() and amISafe() tends to
+                return different value, the get() will return the changed value "NOT SAFE", but the amISafe() method still
+                return the inital value "I'm safe."
+            </p>
+            <p>
+                The fact is simple but maybe not simple. It is due to the mechanism of the keyword
+                "final", as the JLS 17.5.3 Subsequent Modification of Final Fields said:
+            </p>
+            <div class="ui green segment">
+                Even then, there are a number of complications.
+                If a final field is initialized to a compile-time constant in the field declaration,
+                changes to the final field may not be observed,
+                since uses of that final field are replaced at compile time with the compile-time constant.
+            </div>
+            <p>
+                And furthermore, A final private variable of primitive type will be inlined by the compiler at compile-time,
+                but things get different when happends at non-primitive type since a object reference won't be inlined at
+                compiled time. And, yes, "String" in java is definitely not a primitive type.
+            </p>
+            <p>
+                That's pretty much of it!
+            </p>
+        </div>
+    </div>
+    <div class="getdown">
+        <a href="../index.html" target="_self">
+            <div class="ui animated primary button" tabindex="0">
+                <div class="visible content">Back</div>
+                <div class="hidden content">
+                    <i class="right arrow icon"></i>
+                </div>
+            </div></a>
+    </div>
+</div>
+<!-- jQuery first, then Semantic UI JS.
+     No need to refer one via CDN and one via local
+     Just wanna do it this way -_- -->
+<script src="../js/jquery-3.1.0.js"></script>
+<script src="../js/semantic.js"></script>
+</body>
+</html>

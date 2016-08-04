@@ -1,0 +1,22 @@
+.screenmiddle{
+    position: absolute;
+    top: 40px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.getdown{
+    margin-bottom: 80px;
+}
+
+.setmargin{
+    margin-bottom: 65px;
+}
+
+text {
+    font-family: sans-serif;
+    font-size: 12px;
+    fill: white;
+}

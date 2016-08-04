@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>Thoughts on Task 1</title>
+    <!-- Semantic UI CSS -->
+    <!-- No Normalization CSS here since the semantic included it.-->
+    <link rel="stylesheet" href="../css/semantic.css">
+    <link rel="stylesheet" href="../css/normal-slide1.css">
+</head>
+<body class="screenmiddle">
+<div class="ui center aligned container ">
+    <div class="ui center aligned text container">
+        <h1 class="ui header">Task 1 thoughts : Learning via Coding</h1>
+        <div class="ui horizontal section divider">things about d3</div>
+        <div class="ui left aligned fluid container">
+            <p>
+                Through some of my codes, you can find that I was following a pattern, I conclude something via learning.
+            </p>
+            <div class="ui bulleted list">
+                <div class="item">
+                    Load the data and wrap all the others into the function
+                </div>
+                <div class="item">
+                    Create a kind-of box model for the SVG element.
+                </div>
+                <div class="item">
+                    Create the SVG element.
+                </div>
+                <div class="item">
+                    Create the scale for each dimension.
+                </div>
+                <div class="item">
+                    Create the component of D3 like (arc, histogram, etc)
+                </div>
+                <div class="item">
+                    Append the SVG to DOM
+                </div>
+                <div class="item">
+                    Create x and y axies and append them to DOM
+                </div>
+            </div>
+            <p>
+                Initially, I think it was easy. But when I actually coding, I found that it is not the same story.
+                Roughly speaking, I learn d3 in a hard way. I soon realize that I was coding based on v4 which was
+                release just a month ago. And the documents are not comprehensive. They just explain all the API, but not
+                explain how to chain the methods of component to actually form a component.
+            </p>
+            <p>
+                The damn thing about such a weak typed language like javascript is, you never know what actually you need to
+                pass and what object does the function return. If the author doesn't mention, you need dive into the source
+                code to figure it out which is very time consuming.
+            </p>
+            <p>
+                Finally glad that I made it. I know there are other chart library out there which is far more easier
+                than D3, But, just love challenges.
+            </p>
+        </div>
+        </div>
+        <div class="ui horizontal section divider">things need to do</div>
+        <div class="ui left aligned fluid text container">
+            <p>I changed 3 times then get my final laptop. A 2012 model macbook pro. Sucks at speed, but it works.
+            But due to the lack of time, there are so much things that I could Improve. Things like:</p>
+            <div class="ui bulleted list">
+                <div class="item">Fav ICON</div>
+                <div class="item">Best Practices.</div>
+                <div class="item">Introduce modern workflow like gulp and Webpackage.</div>
+                <div class="item">A navbar for the site</div>
+                <div class="item">Decouple some logic to make a universal boilerplate code.</div>
+                <div class="item">Transition()</div>
+                <div class="item">Some updating and exit procedure showcase.</div>
+                <div class="item">Other digrams like d3.force.</div>
+                <div class="item">Try to code with angular2 or React</div>
+                <div class="item">Design better. Damn, I use Semantic UI by trying to take advantage, but lost in lack documents for half a day. Finally
+                know why people love bootstrap, and damn, it just publish ALPHA3</div>
+            </div>
+        </div>
+    <div class="ui horizontal section divider">I mean systematic.</div>
+    <div class="ui left aligned fluid text container">
+        <p>I just want to show you my procedures to finishes these tasks.</p>
+        <div class="ui bulleted list">
+            <div class="item">Learn D3 and all its available diagrams</div>
+            <div class="item">Researching the raw data to match the previous the diagrams</div>
+            <div class="item">Work out a reasonable logic to analysis the data</div>
+            <div class="item">Select frameworks</div>
+            <div class="item">Architecture design and prototyping (the nature of PM -_-)</div>
+            <div class="item">Code the page one by one</div>
+            <div class="item">Polish</div>
+        </div>
+    </div>
+    <div class="getdown">
+        <a href="../index.html" target="_self">
+            <div class="ui animated primary button" tabindex="0">
+                <div class="visible content">Back</div>
+                <div class="hidden content">
+                    <i class="right arrow icon"></i>
+                </div>
+            </div></a>
+    </div>
+</div>
+<!-- jQuery first, then Semantic UI JS.
+     No need to refer one via CDN and one via local
+     Just wanna do it this way -_- -->
+<script src="../js/jquery-3.1.0.js"></script>
+<script src="../js/semantic.js"></script>
+</body>
+</html>
