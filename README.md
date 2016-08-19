@@ -7,3 +7,7 @@ Don't minified the file since convenient to debug.
 In v4, D3 has changed some of its API, The essential is to follow its rule, there are some built-in computation for each diagram, if you don't know it, you may wonder why it just doesn't show the data as the way you want. Like the histogram.
 
 This DEMO has shown how to follow the new pattern.
+
+Under the js folder:[slide-x.js]
+You can see i have heavily followed the same steps to build each diagram. 
+It is good, it makes the work a repeative procedure. So we can modularized them later.
