@@ -9,5 +9,7 @@ In v4, D3 has changed some of its API, The essential is to follow its rule, ther
 This DEMO has shown how to follow the new pattern.
 
 Under the js folder:[slide-x.js]
+
 You can see i have heavily followed the same steps to build each diagram. 
+
 It is good, it makes the work a repeative procedure. So we can modularized them later.
